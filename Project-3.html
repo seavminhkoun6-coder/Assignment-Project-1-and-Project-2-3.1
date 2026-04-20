@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    .contaiter{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+}
+.BG-1{
+    width: 100%;
+    height: 57px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+.BG-3{
+    width: 33.3333333%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-top: 50px;
+}
+.BG-4{
+    width: 33.3333333%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-top: 50px;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+.BG-2{
+    width: 33.3333333%;
+}
+#MG-1{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: -5px;
+    color: white;
+    font-size: 20px;
+}
+#MG-2{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    margin-top: -10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+#MG-3{
+    width: 200px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    bottom: 250px;
+    font-size: large;
+    left: 50%;          
+    transform: translateX(-50%);
+    background: transparent; 
+    border: none;
+    color: white; 
+    cursor: pointer;
+    transition: 0.8s;
+    
+}
+#MG-3:hover{
+    background: rgb(21, 20, 20); 
+    color: rgb(255, 255, 255);      
+    border: 1px solid white;
+    box-shadow: 12px;
+    transition: 0.8s; 
+    box-shadow: -1px -1px 4px white;
+    text-shadow: 1px -1px 1px rgb(255, 255, 255);
+    font-size: 18px;
+    
+}
+.BV-1{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    gap: 35px;
+    flex: 0 0 auto;
+    overflow-x: auto;          /* បើកឱ្យមានការ Scroll ទៅឆ្វេងស្ដាំ */
+    white-space: normal;
+    transform: translatey(-8%);
+    
+}
+.BV-2{
+    width: 300px;
+    height: 650px;
+    background-color: rgb(0, 0, 0);
+    left: -50%;          
+    transform: translateX(40%);
+    flex: 0 0 auto;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+    color: white;
+}
+.BV-3:hover{
+    transform: scale(1.1);
+    object-fit: contain;
+    transition: 0.5s;
+}
+#BN-1{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(21, 204, 143);
+    transform: translatey(-12%);
+}
+#BN-3{
+    width: 30%;
+    height: 250px;
+    position: relative;
+    top: -500px;
+    transform: translateX(40%);
+    color: white;
+
+}
+.BN-4{
+    width: 200px;
+    height: 50px;
+    color: rgb(0, 0, 0); 
+    transition: 0.8s;
+    border-radius: 10px;
+
+}
+.BN-4:hover{
+    box-shadow: -2px 1px 8px white;
+    border: none;
+    background-color: rgb(81, 1, 1);
+    color: white;
+}
+#BN-5{
+    transform: translatey(-43%);
+}
+#BN-6{
+    width: 30%;
+    height: 250px;
+    position: relative;
+    top: -750px;
+    transform: translateX(900px);
+    color: white;
+
+}
+.CV-1{
+    width: 100%;
+    height: 674px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    transform: translatey(-81%);
+
+}
+.CV-2{
+    width: 50%;
+    height: 100%;
+    
+}
+.CV-3{
+    width: 50%;
+    height: 100%;
+    transform: translateX(8%);
+    margin-top: 190px;
+    color: white;
+}
+.CV-4{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    color: white;
+    transform: translatey(-110%);
+    
+}
+.CV-5{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    transform: translatey(25%);
+    
+}
+.CV-6{
+    width: 65%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    transform: translatey(15%);
+    
+}
+.BY-1{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: translatey(-551px);
+    font-size: 25px;
+    
+}
+.BY-2{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    transform: translatey(-552px);
+}
+.BY-3{
+    width: 30.33%;
+    height: 100%;
+    padding: 55px 60px;
+    color: white;
+}
+.fa-solid{
+    font-size: 35px;
+}
+.CX-1 {
+    width: 100%;
+    height: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transform: translatey(-555px);
+    background-color: black;
+}
+.CX-2, .CX-3, .CX-4 {
+    display: inline-block;
+    padding: 0px 5px;
+}
+.img-box {
+    position: relative; 
+    display: inline-block;
+    overflow: hidden;
+    width: 240px;
+    height: 250px;
+    margin: 5px;
+}
+.big-box {
+    width: 400px;
+    height: 504px;
+}
+.VV {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.ins-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    font-size: 30px; 
+    opacity: 0;
+    transition: 0.4s ease-in-out; 
+    pointer-events: none;
+}
+.img-box:hover .VV {
+    transform: scale(1.1); 
+    filter: brightness(70%);
+}
+.img-box:hover .ins-icon {
+    transform: translate(-50%, -50%) scale(1); 
+    opacity: 1; 
+}
+#FD-1{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: white;
+    transform: translatey(-575px);
+}
+#FD-2{
+    font-size: 50px;
+    margin: 10px;
+}
+.subscribe-container {
+    width: 100%;
+    max-width: 97.39%;
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatey(-576px);
+
+}
+.subscribe-form {
+    width: 1200px;
+    display: flex;
+    gap: 15px; 
+}
+.email-input {
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+.email-input::placeholder {
+    color: #666; 
+}
+.VY-1{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
+    color: white;
+    transform: translatey(-578px);
+
+}
+.VY-2{
+    width: 25%;
+    height: 100%;
+    margin:  50px auto;
+    transform: translatex(130px);
+    
+}
+.VY-3{
+    width: 25%;
+    height: 100%;
+    margin:  50px auto;
+    transform: translatex(100px);   
+}
+.VY-4{
+    width: 25%;
+    height: 100%;
+    margin:  50px auto;
+    
+}
+
+</style>
+<body>
+    <nav class="container">
+        <div class="BG-1">
+            <ul class="BG-3">
+                <li>WATCHES</li>
+                <li>APPAREL</li>
+                <li>ACCESSORIES</li>
+            </ul>
+            <img class="BG-2" src="https://novsochetra.github.io/zenvo-watch-website/assets/images/zinvo-navbar-logo.svg" alt="" width="100px" height="40px">
+            <ul class="BG-4">
+                <li>LOG IN</li>
+                <li>CART</li>
+            </ul>
+        </div>
+        <video autoplay loop muted playsinline width="100%">
+            <source src="poster.mp4" type="video/mp4">
+            <source src="poster.mp4" type="video/ogg">
+        </video>
+        <nav id="MG-1">
+            <h1>New <strong><i>Arrivals</i></strong></h1>
+        </nav>
+        <nav id="MG-2">
+            <h3>Discover the new releases. Stand out from the crowd.</h3>
+        </nav>
+        <button id="MG-3">Shop Now</button>
+        <div class="BV-1">
+            <div class="BV-2">
+                <img class="BV-3" src="/img/jumbo-spirit.webp" alt="" width="300px" height="400px">
+                <br/><br/>
+                <h1>&nbsp;&nbsp;JUMBO <strong><i>SPIRIT</i></strong></h1>
+                <p>The newest novelty of the exquisite elegance blends into sophistication, the JUMBO captures the essence of modern luxury.</p>
+                <h3>&nbsp;&nbsp;&nbsp; >>  View Timepiece</h3>
+            </div>
+            <div class="BV-2">
+                <img class="BV-3" src="/img/jumbo-stealth.webp" alt="" width="300px" height="400px">
+                <br/><br/>
+                <h1>&nbsp;&nbsp;JUMBO <strong><i>STEALTH</i></strong></h1>
+                <p>Featuring the custom in-house 42-caliber automatic movement marks ZINVO's decade of innovation and style. Stand out.</p>
+                <h3>&nbsp;&nbsp;&nbsp; >>  View Timepiece</h3>
+            </div>
+            <div class="BV-2">
+                <img class="BV-3" src="/img/blade-12k.webp" alt="" width="300px" height="400px">
+                <br/><br/>
+                <h1>&nbsp;&nbsp;BLADE <strong><i>12K</i></strong></h1>
+                <p>Showcasing and highlighting the evolution of the best-selling Blade design, this timepiece features a yellow gold-plated case and bezel.</p>
+                <h3>&nbsp;&nbsp;&nbsp; >>  View Timepiece</h3>
+            </div>
+            <div class="BV-2">
+                <img class="BV-3" src="/img/blade-spirit.webp" alt="" width="300px" height="400px">
+                <br/><br/>
+                <h1>&nbsp;&nbsp;BLADE <strong><i>SPIRIT</i></strong></h1>
+                <p>Embracing the fusion of matte black with rose gold elements, this timepiece becomes a perfect everyday watch.</p>
+                <h3>&nbsp;&nbsp;&nbsp; >>  View Timepiece</h3>
+            </div>
+            <div class="BV-2">
+                <img class="BV-3" src="/img/blade-cobalt.webp" alt="" width="300px" height="400px">
+                <br/><br/>
+                <h1>&nbsp;&nbsp;BLADE <strong><i>COBALT</i></strong></h1>
+                <p>The ever-evolving timepiece with stainless steel case and blue plated bezel seamlessly integrates with the unique turbine dial.</p>
+                <h3>&nbsp;&nbsp;&nbsp; >>  View Timepiece</h3>
+            </div>
+            <div class="BV-2">
+                <img class="BV-3" src="/img/blade-corsa.webp" alt="" width="300px" height="400px">
+                <br/><br/>
+                <h1>&nbsp;&nbsp;BLADE <strong><i>CORSA</i></strong></h1>
+                <p>Characterized as a bold and highly desirable color combination with red corsa accents featured on the 1-second-spin turbine dial.</p>
+                <h3>&nbsp;&nbsp;&nbsp; >>  View Timepiece</h3>
+            </div>
+        </div>
+        <nav id="BN-1">
+                <img src="../img/showcase-1.webp" alt="" width="100%">
+        </nav>
+        <div id="BN-3">
+                <h1> <i>Blade </i>- 45MM</h1>
+                <p>One of a kind timepiece with the unique 1-second-spin turbine. Powered by the automatic movement and featuring the 44mm stainless steel case, the BLADE is different from any other watch.</p>
+                <h3>Stand out from the crowd.</h3>
+                <button class="BN-4">Explore Collection</button>
+        </div>
+        <nav id="BN-5">
+            <img src="../img/showcase-2.webp" alt="" width="100%">
+        </nav>
+        <div id="BN-6">
+            <h1><i>JUMBO</i> - 44MM</h1>
+            <p>One of a kind timepiece with the unique 1-second-spin turbine. Powered by the automatic movement and featuring the 44mm stainless steel case, the BLADE is different from any other watch.</p>
+            <h3>Stand out from the crowd.</h3>
+            <button class="BN-4">Explore Collection</button>
+        </div>
+        <div class="CV-1">
+            <div class="CV-2">
+                <img src="/img/showcase-collab-1.webp" alt="" width="100%">
+            </div>
+            <div class="CV-3">
+                <h1>ZINVO x <i>DODGE</i></h1>
+                <img src="../img/blade-hellcat.avif" alt="" width="200px" height="13px">
+                <p>This collaboration is an exclusive ZINVO x DODGE timepiece that is limited to 500 pieces worldwide,<br/> featuring many design references from Dodge Challenger SRT Hellcat, including the same leather as the <br/>vehicles interior, the same seatbelt webbing, and many more.</p>
+                <button class="BN-4">Explore Collection</button>
+            </div>
+        </div>
+        <div class="CV-4">
+            <div class="CV-5">
+                <h1>THE - <i>SUNGLASSES</i></h1>
+                <p>Discover the range of our sunglasses. Releasing <br/>occasionally in limited editions.</p>
+                <button class="BN-4">Explore Collection</button>
+            </div>
+            <div class="CV-6">
+                <img src="/img/showcase-sunglasses-1.webp" alt="" width="280px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="/img/showcase-sunglasses-2.webp" alt="" width="280px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="/img/showcase-sunglasses-3.webp" alt="" width="280px">
+            </div>
+        </div>
+        <div class="BY-1">
+            <h1><i>OUR PROMISE</i> TO YOU</h1>
+        </div>
+        <div class="BY-2">
+            <div class="BY-3">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h1>TWO YEAR WARRANTY</h1>
+                <p>All of ZINVO products come with international warranty for the term of 2 years. Learn more about our warranty <a href="">here.</a></p>
+            </div>
+            <div class="BY-3">
+                <i class="fa-solid fa-earth-americas"></i>
+                <h1>HIGH-END QUALITY</h1>
+                <p>Blending precision, craftsmanship, and timeless elegance with trendy designs and innovative features.</p>
+            </div>
+            <div class="BY-3">
+                <i class="fa-solid fa-plane-up"></i>
+                <h1>FREE SHIPPING <br/> GLOBALLY</h1>
+                <p>Worldwide shipping with a secure, tracked shipping method for the fast & reliable delivery. Free standard shipping on all orders.</p>
+            </div>
+        </div>
+        <div class="CX-1">
+        <div class="CX-2">
+            <div class="img-box">
+                <img class="VV" src="/img/gallery-1.webp" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+            <div class="img-box">
+                <img class="VV" src="/img/showcase-sunglasses-2.webp" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div><br/>
+            <div class="img-box">
+                <img class="VV" src="/img/gallery-3.png" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+            <div class="img-box">
+                <img class="VV" src="/img/gallery-4.png" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+        </div>
+        <div class="CX-3">
+            <div class="img-box big-box">
+                <img class="VV" src="/img/gallery-5.jpg" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+        </div>
+        <div class="CX-4">
+            <div class="img-box">
+                <img class="VV" src="/img/gallery-6.png" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+            <div class="img-box">
+                <img class="VV" src="/img/gallery-7.jpg" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div><br/>
+            <div class="img-box">
+                <img class="VV" src="/img/gallery-8.jpg" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+            <div class="img-box">
+                <img class="VV" src="/img/showcase-sunglasses-1.webp" alt="">
+                <i class="fa-brands fa-instagram ins-icon"></i>
+            </div>
+        </div>
+    </div>
+    <nav id="FD-1">
+        <h1 id="FD-2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GET THE LATEST NEWS</h1>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be the first to receive the latest news on our brand, products and upcoming events.</p>
+    </nav>
+    <div class="subscribe-container">
+    <form class="subscribe-form">
+        <input type="email" placeholder="Email Address" class="email-input">
+        <button class="BN-4">Explore Collection</button>
+    </form>
+    </div>
+    <div class="VY-1">
+        <div class="VY-2">
+            <img src="/img/zinvo-logo.avif" alt="" width="150px"><br>
+            <br/>
+            <a href="">info@zinvowatches.com</a><br>
+            <br/>
+            <a href="">+1 (587) 969-2199</a><br>
+            <br/>
+            <a href="">12130 Millennium Drive</a>
+            <br/><br/>
+            <a href="">Los Angeles CA 90094</a>
+            <br/>
+        </div>
+        <div class="VY-3">
+            <h2><a href="">WATCHES</a></h2>
+            <a href="">Blade Collection</a>
+            <a href="">Jumbo Collection</a>
+        </div>
+        <div class="VY-4">
+            <p>CUSTOMER SERVICES <br/>
+                <br/>
+             Watch Registration <br/>
+             <br>
+             FAQ <br/> <br/>Watch Information 
+
+             <br/><br/> Return Policy <br/><br/> 
+             Privacy Policy <br/><br/>Warranty 
+             <br/><br/> Terms & Conditions <br/><br/>
+             Careers</p>
+        </div>
+    </div>
+    </nav>
+</body>
+</html>
+ 
